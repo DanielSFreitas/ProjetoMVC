@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC-CAMERAS\\Documents\\ProjetoMVC\\ProjetoMVC.csproj": {}
+    "C:\\Users\\note\\Documents\\ProjetoMVC\\ProjetoMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC-CAMERAS\\Documents\\ProjetoMVC\\ProjetoMVC.csproj": {
+    "C:\\Users\\note\\Documents\\ProjetoMVC\\ProjetoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC-CAMERAS\\Documents\\ProjetoMVC\\ProjetoMVC.csproj",
+        "projectUniqueName": "C:\\Users\\note\\Documents\\ProjetoMVC\\ProjetoMVC.csproj",
         "projectName": "ProjetoMVC",
-        "projectPath": "C:\\Users\\PC-CAMERAS\\Documents\\ProjetoMVC\\ProjetoMVC.csproj",
-        "packagesPath": "C:\\Users\\PC-CAMERAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC-CAMERAS\\Documents\\ProjetoMVC\\obj\\",
+        "projectPath": "C:\\Users\\note\\Documents\\ProjetoMVC\\ProjetoMVC.csproj",
+        "packagesPath": "C:\\Users\\note\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\note\\Documents\\ProjetoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC-CAMERAS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\note\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -60,6 +60,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -68,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
