@@ -13,7 +13,18 @@ namespace ProjetoMVC.Models
         public string Editora { get; set; } 
         public bool Reservado { get; set; }
         public  Genero Genero { get; set; }
+       
     }
+
+    public class LoginCadastro
+    {
+        public string Login { get; set; }
+        public string Senha { get; set; }
+        public string Nome { get; set; }
+
+        public int Telefone{get; set;}
+    }
+
 
     
 }

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "saEOZ8RiuHD1HesGo1eqwdc1J80kXGSrlW+hFo5zaHtm3x/wmgAWxUBmDA+XeCdloMSl468+fHaFG62dmqRhsA==",
-  "success": true,
+  "dgSpecHash": "64BuAlnzrZKeeK0544KyG7+3H6m9ESSgWHboJrPu3Gn28nfdeTiJDpRX3TrHVaErN9txFH5hT4KK+cuEdER81Q==",
+  "success": false,
   "projectFilePath": "C:\\Users\\note\\Documents\\ProjetoMVC\\ProjetoMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\note\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
@@ -17,6 +17,7 @@
     "C:\\Users\\note\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.4\\microsoft.entityframeworkcore.design.7.0.4.nupkg.sha512",
     "C:\\Users\\note\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.4\\microsoft.entityframeworkcore.relational.7.0.4.nupkg.sha512",
     "C:\\Users\\note\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.4\\microsoft.entityframeworkcore.sqlserver.7.0.4.nupkg.sha512",
+    "C:\\Users\\note\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.5\\microsoft.entityframeworkcore.tools.7.0.5.nupkg.sha512",
     "C:\\Users\\note\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\note\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\note\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -75,5 +76,15 @@
     "C:\\Users\\note\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\note\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Downgrade de pacote detectado: Microsoft.EntityFrameworkCore.Design de 7.0.5 para 7.0.4. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n ProjetoMVC -> Microsoft.EntityFrameworkCore.Tools 7.0.5 -> Microsoft.EntityFrameworkCore.Design (>= 7.0.5) \r\n ProjetoMVC -> Microsoft.EntityFrameworkCore.Design (>= 7.0.4)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
