@@ -10,28 +10,28 @@
     <a asp-action="Criar">Novo Livro</a>
 </p>
 
+<form asp-action="Index" method="get">
+    <label for="genero">Filtrar por Gênero:</label>
+    <select id="genero" name="genero">
+        <option value="">Todos</option>
+        @foreach (var genre in Enum.GetValues(typeof(ProjetoMVC.Models.Genero)))
+        {
+            <option value="@genre">@genre</option>
+        }
+    </select>
+    <button type="submit">Filtrar</button>
+</form>
+
 
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Editora)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Genero)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Reservado)
-            </th>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
+            <th>@Html.DisplayNameFor(model => model.Nome)</th>
+            <th>@Html.DisplayNameFor(model => model.Descricao)</th>
+            <th>@Html.DisplayNameFor(model => model.Editora)</th>
+            <th>@Html.DisplayNameFor(model => model.Genero)</th>
+            <th>@Html.DisplayNameFor(model => model.Reservado)</th>
             <th></th>
         </tr>
     </thead>
@@ -39,24 +39,12 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>
-                    @Html.DisplayFor(model => item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => item.Nome)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => item.Descricao)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => item.Editora)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => item.Genero)
-                </td>
-                <td>
-                    @Html.DisplayFor(model => item.Reservado)
-                </td>
+                <td>@Html.DisplayFor(model => item.Id)</td>
+                <td>@Html.DisplayFor(model => item.Nome)</td>
+                <td>@Html.DisplayFor(model => item.Descricao)</td>
+                <td>@Html.DisplayFor(model => item.Editora)</td>
+                <td>@Html.DisplayFor(model => item.Genero)</td>
+                <td>@Html.DisplayFor(model => item.Reservado)</td>
                 <td>
                     <a asp-action="Editar" asp-route-id="@item.Id">Editar</a> |
                     <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a> |

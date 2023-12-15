@@ -1,11 +1,10 @@
 @model IEnumerable<ProjetoMVC.Models.Livro>
 
 @{
-    ViewData["Title"] = "Livro Pesquisado";
+    ViewData["Title"] = "Livros por Gênero";
 }
 
-<h2>Livro</h2>
-
+<h2>Livros por Gênero</h2>
 
 <table class="table">
     <thead>
@@ -54,6 +53,7 @@
                     @Html.DisplayFor(model => item.Reservado)
                 </td>
                 <td>
+                    <!-- Adicione os links para Editar, Detalhes e Deletar conforme necessário -->
                     <a asp-action="Editar" asp-route-id="@item.Id">Editar</a> |
                     <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a> |
                     <a asp-action="Deletar" asp-route-id="@item.Id">Deletar</a>
