@@ -17,12 +17,17 @@ namespace ProjetoMVC.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
-        {
-            var livro = _context.Livros.ToList();
-            return View(livro);
+public IActionResult Index(string genero)
+{
+    var livros = _context.Livros.ToList();
 
-        }
+    if (!string.IsNullOrEmpty(genero))
+    {
+        livros = livros.Where(x => x.Genero.ToString() == genero).ToList();
+    }
+
+    return View(livros);
+}
         public IActionResult Criar()
         {
             return View();
@@ -107,7 +112,20 @@ namespace ProjetoMVC.Controllers
         return NotFound();
 
     return View(livros);
+    
 }
+
+[HttpGet("FiltrarPorGenero")]
+public IActionResult FiltrarPorGenero(string genero)
+{
+    var generoEnum = Enum.Parse<Genero>(genero, true); 
+
+    var livros = _context.Livros.Where(x => x.Genero == generoEnum).ToList();
+
+    return View("Pesquisa", livros);
+}
+
+
 
 
 
